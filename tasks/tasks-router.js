@@ -5,7 +5,7 @@ const Tasks = require('./tasks.model')
 const router = express.Router()
 
 
-//GET /api/tasks for retrieving list of tasks - NOT TESTED
+//GET /api/tasks for retrieving list of tasks - TESTED
 
 router.get('/', (req, res) => {
   Tasks.getTasks()

@@ -5,7 +5,7 @@ const Resources = require('./resources-model');
 const router = express.Router();
 
 
-// GET /api/resources - Retrieve list of resources - NOT TESTED
+// GET /api/resources - Retrieve list of resources -  TESTED
 
 router.get('/', (req, res) => {
   Resources.getResources()
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 })
 
 
-// POST /api/resources - Add a new resource - NOT TESTED
+// POST /api/resources - Add a new resource - TESTED
 
 router.post('/', (req,res) => {
   Resources.addResource(req.body)
