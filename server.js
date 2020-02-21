@@ -1,9 +1,9 @@
 const express = require('express')
 const helmet = require('helmet')
 
-const ProjectRouter = require('.projects/project-router')
-const ResourceRouter = require('./resources/resource-router')
-const TaskRouter = require('./tasks/task-router')
+const ProjectRouter = require('./projects/projects-router')
+const ResourceRouter = require('./resources/resources-router')
+const TaskRouter = require('./tasks/tasks-router')
 
 const server = express()
 
