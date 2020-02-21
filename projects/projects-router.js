@@ -4,7 +4,7 @@ const Projects = require('./projects-model');
 
 const router = express.Router();
 
-// GET /api/projects - Retrieve a list of projects - NOT TESTED
+// GET /api/projects - Retrieve a list of projects -  TESTED
 router.get('/', (req, res) => {
     Projects.getProjects()
     .then(projects => {
@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
       });
   });
 
-// GET /apd/projects/:id endpoint - Retrieve a project by ID - NOT TESTED
+// GET /apd/projects/:id endpoint - Retrieve a project by ID -  TESTED
 router.get('/:id', (req, res) => {
   Projects.getProjectById(req.params.id)
     .then(project => {
@@ -43,7 +43,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-// POST /api/projects - add a project - NOT TESTED
+// POST /api/projects - add a project -  TESTED
 router.post('/', (req, res) => {
   const newProj = { ...req.body, completed: 0 };
   Projects.addProject(newProj)
