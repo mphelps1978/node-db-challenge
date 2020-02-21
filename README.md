@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+***   `Relational Databases` are sets of formally described tables where data can be stored, accessed, and reassembled in different ways. `SQL` is the standard language and API used for accessing `Relational Databases` and manipulating their data.
+
 - [ ] Why do tables need a `primary key`?
+
+*** `Primary Keys` are used to identify every row in the table as unique.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+*** `Foreign Key`
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+*** A third table to link them together.
 
 ## Minimum Viable Product
 
