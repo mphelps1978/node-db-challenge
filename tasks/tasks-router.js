@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
         }
         return task
       })
-      res.staus(200).json(completedTasks)
+      res.status(200).json(completedTasks)
     })
     .catch(err => {
       console.log(err.message);
